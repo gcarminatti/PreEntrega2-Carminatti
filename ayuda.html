@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+     <!--Boostrap Link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+     <!--JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      
+     <!--CSS Link -->
+      <link rel="stylesheet" href="./style.css">
+
+     <title>My Pagina Web</title>
+</head>
+<body onload="loadcarousel()">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div id="containerNav" class="container-fluid">
+   
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img class="navbar-brand" href="#" src="./Imagenes/test.png" width="150px" height="90px" alt="logo" >
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./index.html">Inicio<span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"></a></li>
+              <li><a href="#">Informatica</a></li>
+              <li><a href="#">Celulares y accesorios</a></li>
+              <li><a href="#">Deportes</a></li>
+              <li><a href="#">Vestimenta</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Productos Nuevos</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Productos Destacados</a></li>
+            </ul>
+          </li>
+          <li><a href="./politicadegarantia.html">Garantia</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+          </div>
+          <button type="submit" class="btn btn-default">Confirmar</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./Contacto.html">Contacto</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Perfil</a></li>
+              <li><a href="./sobrenosotros.html">Nosotros</a></li>
+              <li><a href="./ayuda.html">Ayuda</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Cerrar Sesion</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="ayuda">
+        <h3 id="tituloAyuda">Ayuda y/o preguntas frecuentes</h3>
+        <ol>
+            <li>¿Qué hago si me olvidé de mi contraseña?
+              Si perdiste u olvidaste la contraseña de tu cuenta, haz clic en el enlace Olvidé mi contraseña. Podrás ver este enlace accediendo clic en el menú Mi cuenta ubicado en la parte superior derecha de todas las páginas del sitio.
+              
+              Escribe tu dirección email y pulsa el botón "Enviar".  Automáticamente te enviaremos un email para comprobar que tú eres el propietario de esa dirección de email.
+              
+              Ingresa a tu casilla de correo (Gmail, Hotmail, Outlook o el que uses) y abre el mail que te enviamos. En el mail verás las instrucciones a seguir y el enlace en el que debes hacer clic. Siguiendo las instrucciones de ese primer mail recibirás un segundo mail, y en este te enviaremos tu nueva contraseña.
+              
+              Una vez que tengas tu nueva contraseña podrás ingresar a tu cuenta y si quieres podrás cambiarla después para poner una que sea de tu agrado y puedas recordar. Lee la sección “¿Cómo puedo modificar mis datos de mi cuenta, envío o facturación?” de más arriba.
+              
+              Si no recibiste nuestros correos electrónicos, mira en la pestaña de notificaciones o en la carpeta de correo basura o Spam. Si tampoco lo encuentras ahí, escribenos mediante el formulario de contacto y nuestro equipo de Atención al Cliente se pondrá en contacto contigo a la brevedad para ayudarte
+            </li> 
+            <li>
+              
+              Mi cuenta
+              ¿Cómo acceder a mi cuenta?
+              Para acceder a tu cuenta solo tenes que introducir tu email y contraseña en la ventana correspondiente. Podrás acceder usando el enlace que dice “Ingresar” ubicado en la esquina superior de la página.
+              
+              
+              
+              ¿Qué puedo administrar desde "Mi cuenta"?
+              Datos personal – Aquí puedes mantener actualizada tu información de contacto, editar tu email y restablecer tu contraseña.
+              Direcciones de envío – En esta sección puedes crear todas las direcciones que tengas. Proporciona tu dirección y un nombre identificador para cada dirección, así podrás recibir tus compras, por ejemplo en  tu casa, tu trabajo o incluso enviar un regalo directamente a un amigo o familiar.
+              Compras Realizadas – Aquí se muestra todo tu historial de pedidos. Podrás ver el estado de tus pedidos así como el detalle de cada uno.
+              
+              
+              ¿Cómo puedo modificar mis datos o mi dirección de envío?
+              Para cambiar tus direcciones de envío o facturación, tu contraseña o tu dirección de correo electrónico seguí estos sencillos pasos:
+              
+              Entra en tu cuenta mediante el enlace que pone Mi cuenta, ubicado en la parte superior derecha de todas las páginas de la web.
+              
+              Selecciona la sección adecuada del menú:
+              
+              Para cambiar la contraseña, la dirección de correo electrónico, tu nombre, apellido o teléfono haz clic en el menú "Datos de usuario".
+              Para cambiar o agregar direcciones de entrega haz clic en "Direcciones de envío".
+              Edita los datos que quieras actualizar.
+              Pulsa el botón "Guardar".
+              Tus cambios han quedado registrados.
+              Ten en cuenta que los datos de tu cuenta de cliente no están conectados a la suscripción a nuestro email de ofertas y novedades por lo que estos datos deberán actualizarse por separado.
+              
+              
+              
+              ¿Cómo cambio el email vinculado a mi cuenta?
+              Podes cambiar sin problemas tu dirección correo electrónico siguiendo estos sencillos pasos:
+              
+              Entra en tu cuenta mediante el enlace que pone Mi cuenta, ubicado en la parte superior de todas las páginas de la web.
+              Selecciona "Datos de usuario".
+              Edita tu email.
+              Pulsa el botón "Guardar".
+              Tus cambios han quedado registrados.
+              Ten en cuenta que los datos de tu cuenta de cliente no están conectados a la suscripción a nuestro email de ofertas y novedades por lo que estos datos deberán actualizarse por separado.
+              
+              
+              
+              ¿Qué hago si me olvidé de mi contraseña?
+              Si perdiste u olvidaste la contraseña de tu cuenta, haz clic en el enlace Olvidé mi contraseña. Podrás ver este enlace accediendo clic en el menú Mi cuenta ubicado en la parte superior derecha de todas las páginas del sitio.
+              
+              Escribe tu dirección email y pulsa el botón "Enviar".  Automáticamente te enviaremos un email para comprobar que tú eres el propietario de esa dirección de email.
+              
+              Ingresa a tu casilla de correo (Gmail, Hotmail, Outlook o el que uses) y abre el mail que te enviamos. En el mail verás las instrucciones a seguir y el enlace en el que debes hacer clic. Siguiendo las instrucciones de ese primer mail recibirás un segundo mail, y en este te enviaremos tu nueva contraseña.
+              
+              Una vez que tengas tu nueva contraseña podrás ingresar a tu cuenta y si quieres podrás cambiarla después para poner una que sea de tu agrado y puedas recordar. Lee la sección “¿Cómo puedo modificar mis datos de mi cuenta, envío o facturación?” de más arriba.
+              
+              Si no recibiste nuestros correos electrónicos, mira en la pestaña de notificaciones o en la carpeta de correo basura o Spam. Si tampoco lo encuentras ahí, escribenos mediante el formulario de contacto y nuestro equipo de Atención al Cliente se pondrá en contacto contigo a la brevedad para ayudarte.
+              
+              
+              
+              ¿Debo tener una cuenta para hacer un pedido?
+              No es necesario, pero crear una cuenta te permite realizar tus pedidos más rápido y fácil.
+              
+              En Venet nos importa mucho tu privacidad por lo que guardamos de forma segura y privada tu información y no almacenamos los datos de tus tarjetas de crédito.
+              
+              Creándote una cuenta, cada vez que compres en nuestra tienda no tendrás que introducir todos los datos de tu dirección, haciendo que todo el proceso de compra sea más rápido y fácil. Además podrás acceder al historial de tus compras anteriores y guardar tu selección de productos favoritos.
+              
+              También puedes comprar como usuario no registrado, sin necesidad de crear una cuenta. Añadiendo los productos que hayas seleccionado a tu carro, cuando vayas a pagar, la página te propondrá “Comprar como usuario no registrado”.
+              
+              Ten en cuenta que solo es posible comprobar el estado de envío de tu compra o editar tus datos con una cuenta de cliente registrado.</li>
+            
+        </ol>
+    </div>
+    </section>
+
+
+  
+<!--Comienzo Newsletter-->
+
+<section class="subscribe-area pb-50 pt-70">
+  <div class="container">
+    <div class="row">
+  
+            <div class="col-md-4">
+              <div class="subscribe-text mb-15">
+                <span>Suscribite a nuestro newsletter</span>
+                <h2>Suscribirse newsletter</h2>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input placeholder="enter your email address" type="email">
+                    <button>Suscribir <i class="fas fa-long-arrow-alt-right"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  </div>
+  </section>
+
+            
+    <script>
+      function loadcarousel () {
+     $('.carousel[data-type="multi"] .item').each(function(){
+       var next = $(this).next();
+       if (!next.length) {
+         next = $(this).siblings(':first');
+       }
+       next.children(':first-child').clone().appendTo($(this));
+       
+       for (var i=0;i<2;i++) {
+         next=next.next();
+         if (!next.length) {
+           next = $(this).siblings(':first');
+         }
+         
+         next.children(':first-child').clone().appendTo($(this));
+       }
+     });
+      }
+     </script> 
+ 
+ 
+  
+
+</body>
+</html>

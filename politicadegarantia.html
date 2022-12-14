@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+     <!--Boostrap Link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+     <!--JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      
+     <!--CSS Link -->
+      <link rel="stylesheet" href="./style.css">
+
+     <title>My Pagina Web</title>
+</head>
+<body onload="loadcarousel()">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div id="containerNav" class="container-fluid">
+   
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img class="navbar-brand" href="#" src="./Imagenes/test.png" width="150px" height="90px" alt="logo" >
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="./index.html">Inicio<span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"></a></li>
+              <li><a href="#">Informatica</a></li>
+              <li><a href="#">Celulares y accesorios</a></li>
+              <li><a href="#">Deportes</a></li>
+              <li><a href="#">Vestimenta</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Productos Nuevos</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Productos Destacados</a></li>
+            </ul>
+          </li>
+          <li><a href="./politicadegarantia.html">Garantia</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+          </div>
+          <button type="submit" class="btn btn-default">Confirmar</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./Contacto.html">Contacto</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Perfil</a></li>
+              <li><a href="./sobrenosotros.html">Nosotros</a></li>
+              <li><a href="./ayuda.html">Ayuda</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Cerrar Sesion</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Container Fluid -->
+<div class="container-fluid">
+  
+
+  <!-- Comienzo de Slider-->
+  
+  <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active ">
+        <div class="d-flex justify-content-center" >
+        <img src="./Imagenes/test.png"  width="100%" height="300px" alt="Item - Monitor">
+      </div>
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex justify-content-center" >
+        <img src="./Imagenes/test.png" width="100%" height="300px" alt="Item - Remera estampada Nike">
+        </div>
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <div class="d-flex justify-content-center" >
+        <img src="./Imagenes/test.png" width="100%" height="300px" alt="Item - Remera estampada Nike">
+        </div>
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+  
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+ 
+
+    <section>
+    <div class="garantia">
+        <h3 id="titulogarantia">Condiciones de Garantia</h3>
+        <ol>
+            <li>Todos los equipos ensamblados por xxxx cuentan con 1 año de garantía.
+            Quedan excluidos de garantía las  fuentes, teclados, mouse y parlantes del los gabinetes genéricos.</li> 
+            <li>La garantía cubre defectos de fabricación en los componentes del hardware integrante del equipo original únicamente, no incluye problemas por incompatibilidades con otro hardware instalado posteriormente a la compra por parte del cliente.</li>
+            <li>En todo caso, toda la mercadería deberá ser devuelta con sus manuales, cajas, drivers completos y en buen estado.</li>
+            <li>Mercadería sin sello de garantía, número serial correcto, o etiqueta de garantía legible queda excluida de garantía</li>
+            <li>No se aceptará mercadería golpeada, dañada, rayada o con integrados quemados, así como también toda mercadería que fuese modificada de su presentación de fábrica original (cables.enchufes, conectores, etc) o que se encuentren en condiciones sanitarias aceptables, quedarán automáticamente sin garantía.</li>
+            <li>La garantía no cubre defectos causado por picos y bajas de tensión o mala instalación eléctrica.</li>
+        </ol>
+
+    <div class="garantia">
+            <h3 id="titulogarantia">Devoluciones o Cambios</h3>
+            <ol>
+                <li>Todos los equipos ensamblados por xxxx cuentan con 1 año de garantía.
+                Quedan excluidos de garantía las  fuentes, teclados, mouse y parlantes del los gabinetes genéricos.</li> 
+                <li>La garantía cubre defectos de fabricación en los componentes del hardware integrante del equipo original únicamente, no incluye problemas por incompatibilidades con otro hardware instalado posteriormente a la compra por parte del cliente.</li>
+                <li>En todo caso, toda la mercadería deberá ser devuelta con sus manuales, cajas, drivers completos y en buen estado.</li>
+                <li>Mercadería sin sello de garantía, número serial correcto, o etiqueta de garantía legible queda excluida de garantía</li>
+                <li>No se aceptará mercadería golpeada, dañada, rayada o con integrados quemados, así como también toda mercadería que fuese modificada de su presentación de fábrica original (cables.enchufes, conectores, etc) o que se encuentren en condiciones sanitarias aceptables, quedarán automáticamente sin garantía.</li>
+                <li>La garantía no cubre defectos causado por picos y bajas de tensión o mala instalación eléctrica.</li>
+                <li>Mercadería sin sello de garantía, número serial correcto, o etiqueta de garantía legible queda excluida de garantía</li>
+                <li>No se aceptará mercadería golpeada, dañada, rayada o con integrados quemados, así como también toda mercadería que fuese modificada de su presentación de fábrica original (cables.enchufes, conectores, etc) o que se encuentren en condiciones sanitarias aceptables, quedarán automáticamente sin garantía.</li>
+                <li>La garantía no cubre defectos causado por picos y bajas de tensión o mala instalación eléctrica.</li>
+                <li>Mercadería sin sello de garantía, número serial correcto, o etiqueta de garantía legible queda excluida de garantía</li>
+                <li>No se aceptará mercadería golpeada, dañada, rayada o con integrados quemados, así como también toda mercadería que fuese modificada de su presentación de fábrica original (cables.enchufes, conectores, etc) o que se encuentren en condiciones sanitarias aceptables, quedarán automáticamente sin garantía.</li>
+                <li>La garantía no cubre defectos causado por picos y bajas de tensión o mala instalación eléctrica.</li>
+            </ol>
+
+    </div>
+    </section>
+
+<section id="infoContacto">
+  <div class="contenedorContacto">
+        <div id="logo2">
+            <img class="logo2" src="./Imagenes/test.png" alt="Logoempresa">
+            <ul class="contactoInfo">
+                <li class="contactoInfo" >Jose Ellauri 13232 Esq.Buxareo</li>
+                <li class="contactoInfo" >2 8985 1838  -  289851839</li>
+                <li class="contactoInfo" >Lunes a Sabado - 09:00 a 18:00</li>
+            </ul>
+</div>
+    
+    
+</section>
+
+
+<!--Comienzo Newsletter-->
+
+<section class="subscribe-area pb-50 pt-70">
+  <div class="container">
+    <div class="row">
+  
+            <div class="col-md-4">
+              <div class="subscribe-text mb-15">
+                <span>Suscribite a nuestro newsletter</span>
+                <h2>Suscribirse newsletter</h2>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input placeholder="enter your email address" type="email">
+                    <button>Suscribir <i class="fas fa-long-arrow-alt-right"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  </div>
+  </section>
+    
+<script>
+  function loadcarousel () {
+ $('.carousel[data-type="multi"] .item').each(function(){
+   var next = $(this).next();
+   if (!next.length) {
+     next = $(this).siblings(':first');
+   }
+   next.children(':first-child').clone().appendTo($(this));
+   
+   for (var i=0;i<2;i++) {
+     next=next.next();
+     if (!next.length) {
+       next = $(this).siblings(':first');
+     }
+     
+     next.children(':first-child').clone().appendTo($(this));
+   }
+ });
+  }
+ </script>     
+
+
+</body>
+</html>
